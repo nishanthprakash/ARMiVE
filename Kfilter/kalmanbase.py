@@ -1,0 +1,82 @@
+import random
+import numpy
+import pylab
+import csv 
+import time
+n=0
+with open('usage.csv', 'rb') as csvfile:
+    usage = csv.reader(csvfile, delimiter=',', quotechar='|')
+    dat=[]	
+    for a,b in usage:
+      dat.append(int(b))
+
+# Implements a linear Kalman filter.
+class KalmanFilterLinear:
+  def __init__(self,_A, _B, _H, _x, _P, _Q, _R):
+    self.A = _A                      # State transition matrix.
+    self.B = _B                      # Control matrix.
+    self.H = _H                      # Observation matrix.
+    self.current_state_estimate = _x # Initial state estimate.
+    self.current_prob_estimate = _P  # Initial covariance estimate.
+    self.Q = _Q                      # Estimated error in process.
+    self.R = _R                      # Estimated error in measurements.
+  def GetCurrentState(self):
+    return self.current_state_estimate
+  def Step(self,control_vector,measurement_vector):
+    
+    #---------------------------Prediction step-----------------------------
+    predicted_state_estimate = self.A * self.current_state_estimate + self.B * control_vector
+    predicted_prob_estimate = (self.A * self.current_prob_estimate) * numpy.transpose(self.A) + self.Q
+    #--------------------------Observation step-----------------------------
+    innovation = measurement_vector - self.H*predicted_state_estimate
+    innovation_covariance = self.H*predicted_prob_estimate*numpy.transpose(self.H) + self.R
+    #-----------------------------Update step-------------------------------
+    kalman_gain = predicted_prob_estimate * numpy.transpose(self.H) * numpy.linalg.inv(innovation_covariance)
+    self.current_state_estimate = predicted_state_estimate + kalman_gain * innovation
+    # We need the size of the matrix so we can make an identity matrix.
+    size = self.current_prob_estimate.shape[0]
+    # eye(n) = nxn identity matrix.
+    self.current_prob_estimate = (numpy.eye(size)-kalman_gain*self.H)*predicted_prob_estimate
+
+
+numsteps = len(dat)
+
+A = numpy.matrix([1])
+H = numpy.matrix([1])
+B = numpy.matrix([0])
+Q = numpy.matrix([0.00001])
+R = numpy.matrix([0.1])
+xhat = numpy.matrix([3])
+P    = numpy.matrix([1])
+
+filter = KalmanFilterLinear(A,B,H,xhat,P,Q,R)
+
+measuredvalues = []
+kalman = []
+
+for i in range(numsteps):
+    measured =   dat[i] #random.gauss(10,5) #input 2
+    measuredvalues.append(measured)
+    kalman.append(filter.GetCurrentState()[0,0])
+    filter.Step(numpy.matrix([0]),numpy.matrix([measured]))
+    #print kalman
+    #print "-------------------------------------------------------"
+
+#print kalman[numsteps-1]
+
+pylab.plot(range(numsteps),measuredvalues,'b',range(numsteps),kalman,'g')
+pylab.xlabel('Time')
+pylab.ylabel('No. of requests or CPU usage ')
+pylab.title('No. of requests or Allocation needed measured with Kalman Filter')
+pylab.legend(('measured','kalman'))
+pylab.show()
+
+#while True:
+#    measured = output = subprocess.Popen(["xentop"], stdout=subprocess.PIPE).communicate()[0] #gotta replace "xentop" with required command
+#    measuredvalues.append(measured)
+#    kalman.append(filter.GetCurrentState()[0,0])
+#    filter.Step(numpy.matrix([0]),numpy.matrix([measured]))
+#    numsteps=numsteps+1
+#    print kalman[numsteps-1]
+#    print "-------------------------------------------------------"
+#    time.sleep(300)

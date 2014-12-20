@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="FuzzyResourceManager" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/FuzzyResourceManager" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/FuzzyResourceManager" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/AreaCentroidAlgorithm.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/CompoundTerm.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/DescriptiveAntecedent.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/DiscreteTerm.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/FunctionTerm.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/FuzzyAnd.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/FuzzyAntecedent.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/FuzzyConsequent.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/FuzzyDefuzzifier.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/FuzzyEngine.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/FuzzyException.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/FuzzyExceptions.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/FuzzyLite.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/FuzzyModulation.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/FuzzyOperation.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/FuzzyOperator.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/FuzzyOr.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/FuzzyRule.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/Hedge.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/HedgeSet.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/InfixToPostfix.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/InputLVar.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/LinguisticTerm.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/LinguisticVariable.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/MamdaniConsequent.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/MamdaniRule.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/OutputLVar.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/RectangularTerm.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/RuleBlock.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/ShoulderTerm.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/SingletonTerm.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/StrOp.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/TakagiSugenoConsequent.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/TakagiSugenoRule.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/TakagiSugenoTerm.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/TrapezoidalTerm.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/TriangularTerm.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/defs.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/flScalar.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/fuzzylite/test.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/AreaCentroidAlgorithm.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/CompoundTerm.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/DescriptiveAntecedent.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/DiscreteTerm.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/FunctionTerm.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/FuzzyAnd.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/FuzzyAntecedent.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/FuzzyConsequent.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/FuzzyDefuzzifier.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/FuzzyEngine.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/FuzzyException.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/FuzzyExceptions.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/FuzzyModulation.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/FuzzyOperation.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/FuzzyOperator.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/FuzzyOr.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/FuzzyRule.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/Hedge.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/HedgeSet.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/InfixToPostfix.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/InputLVar.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/LinguisticTerm.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/LinguisticVariable.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/MamdaniConsequent.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/MamdaniRule.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/OutputLVar.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/RectangularTerm.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/RuleBlock.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/ShoulderTerm.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/SingletonTerm.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/StrOp.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/TakagiSugenoConsequent.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/TakagiSugenoRule.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/TakagiSugenoTerm.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/TrapezoidalTerm.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/TriangularTerm.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/main.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/src/test.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/AreaCentroidAlgorithm.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/CompoundTerm.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/DescriptiveAntecedent.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/DiscreteTerm.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/FunctionTerm.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/FuzzyAnd.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/FuzzyAntecedent.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/FuzzyConsequent.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/FuzzyDefuzzifier.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/FuzzyEngine.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/FuzzyException.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/FuzzyExceptions.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/FuzzyModulation.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/FuzzyOperation.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/FuzzyOperator.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/FuzzyOr.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/FuzzyRule.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/Hedge.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/HedgeSet.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/InfixToPostfix.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/InputLVar.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/LinguisticTerm.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/LinguisticVariable.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/MamdaniConsequent.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/MamdaniRule.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/OutputLVar.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/RectangularTerm.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/RuleBlock.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/ShoulderTerm.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/SingletonTerm.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/StrOp.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/TakagiSugenoConsequent.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/TakagiSugenoRule.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/TakagiSugenoTerm.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/TrapezoidalTerm.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/TriangularTerm.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/main.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/fuzzylite/unix-demo/src/test.d" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/gui/GuiCanvas.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/gui/GuiGrapher.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/gui/GuiLVarWizard.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/gui/GuiLinguisticTerm.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/gui/GuiLinguisticVariable.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/gui/GuiMainWindow.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/gui/GuiPreferences.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/gui/InputController.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/gui/LinguisticTermController.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/gui/LinguisticVariableController.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/gui/MainWindowController.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/gui/OutputController.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/gui/RuleController.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/gui/TestController.h" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/src/GuiCanvas.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/src/GuiGrapher.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/src/GuiLVarWizard.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/src/GuiLinguisticTerm.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/src/GuiLinguisticVariable.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/src/GuiMainWindow.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/src/GuiPreferences.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/src/InputController.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/src/LinguisticTermController.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/src/LinguisticVariableController.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/src/MainWindowController.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/src/OutputController.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/src/RuleController.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/src/TestController.cpp" />
+		<Unit filename="../../Desktop/fuzzylite-1.03/gui/src/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
